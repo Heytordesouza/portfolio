@@ -1,73 +1,77 @@
-.container-experiences {
-    width: 100%;
+.container-training {
+    max-width: 100%;
     margin-top: 5rem;
-    padding: 3rem;
+    padding: 1rem;
     background-color: #ffffff;
 }
-
-.experiences {
+  
+.training {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem 2rem;
     color: #111111;
 }
-
-.companies {
+  
+.training-menu {
     background-color: #b6b6b6;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 0.5rem;
 }
-
-.companies h1 {
+  
+.training-menu h1 {
     position: relative;
+    width: 22vw;
 }
   
-.companies h1::before {
+.training-menu h1::before {
     content: "";
     position: absolute;
     background: #33FFB8;
-    width: 3.5rem;
+    width: 4rem;
     height: 0.5rem;
-    top: 4rem;
+    top: 8.7rem;
 }
-
-.companies ul {
+  
+.training-menu ul {
     margin-top: 4rem;
 }
   
-.companies ul li {
+.training-menu ul li {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
     font-weight: 500;
     color: #111111;
 }
-
-.info-companies {
+  
+.info-training {
     width: 60%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
+  
 .period {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     margin-bottom: 1rem;
+}
+
+.period h2 {
+    width: 70%;
 }
   
 .period > p {
     color: #111111;
-    padding: 10px;
-    border-radius: 8px;
 }
   
-.info-companies-title > p {
+.info-training-container > P {
+    color: #111111;
+    text-align: center;
     line-height: 2.2rem;
     letter-spacing: 0.1rem;
-    text-align: center;
-    color: #111111;
 }

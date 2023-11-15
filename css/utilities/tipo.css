@@ -1,0 +1,16 @@
+.title {
+    font-size: 3rem;
+}
+  
+.subtitle {
+    display: flex;
+    font-size: 2rem;  
+}
+  
+.paragraph {
+    font-size: 1.3rem;
+}
+  
+.paragraph-bold {
+    font-weight: 500;
+}

@@ -21,14 +21,12 @@ main {
     margin-bottom: 2rem;
 }
 
-.subtitle {
+.name h2 {
     color: #ffffff;
-    font-size: 2rem;
 }
 
-.title {
+.name h1 {
     color: #ffffff;
-    font-size: 4rem;
 }
 
 .presentation {

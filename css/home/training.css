@@ -1,77 +1,167 @@
 .container-training {
-    max-width: 100%;
-    margin-top: 5rem;
-    padding: 1rem;
-    background-color: #ffffff;
+  max-width: 100%;
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: #1b1b1b;
+  border-radius: 1rem;
+  transition: 1s;
 }
-  
+
 .training {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 2rem;
-    color: #111111;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  color: #ffffff;
 }
-  
+
 .training-menu {
-    background-color: #b6b6b6;
-    padding: 2rem;
-    border-radius: 0.5rem;
+  background-color: #111111;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: 1s;
 }
-  
+
 .training-menu h1 {
-    position: relative;
-    width: 22vw;
+  position: relative;
+  width: 22vw;
 }
-  
+
 .training-menu h1::before {
-    content: "";
-    position: absolute;
-    background: #33FFB8;
-    width: 4rem;
-    height: 0.5rem;
-    top: 8.7rem;
+  content: "";
+  position: absolute;
+  background: #33FFB8;
+  width: 4rem;
+  height: 0.5rem;
+  top: 8.5rem;
 }
-  
+
 .training-menu ul {
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
-  
+
 .training-menu ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-    font-weight: 500;
-    color: #111111;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  color: #ffffff;
 }
-  
+
 .info-training {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-  
+
 .period {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .period h2 {
-    width: 70%;
+  width: 70%;
 }
-  
-.period > p {
-    color: #111111;
+
+.period > span {
+  width: 25%;
+  background-color: #111111;
+  color: #33FFB8;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.2rem;
 }
-  
+
 .info-training-container > P {
-    color: #111111;
-    text-align: center;
-    line-height: 2.2rem;
-    letter-spacing: 0.1rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.info-training section {
+  display: none;
+}
+
+.info-training section.ativo {
+  display: block;
+  position: relative;
+}
+
+.js-training li {
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+  .training {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .training-menu {
+    padding: 1rem 3rem;
+  }
+
+  .training-menu h1 {
+    width: 32vw;
+    font-size: 3.3rem;
+  }
+
+  .training-menu h1::before {
+    top: 7.5rem;
+  }
+
+  .info-training {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .training-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 7rem;
+  }
+
+  .training-menu h1::before {
+    top: 8.4rem;
+  }
+
+  .training-menu h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .js-training li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .period {
+    flex-direction: column;
+  }
+
+  .period h2{
+    display: flex;
+    justify-content: center;
+  }
+
+  .period span {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
 }

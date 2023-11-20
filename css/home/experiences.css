@@ -2,7 +2,9 @@
     width: 100%;
     margin-top: 5rem;
     padding: 3rem;
-    background-color: #ffffff;
+    border-radius: 1rem;
+    background-color: #1b1b1b;
+    transition: 1s;
 }
 
 .experiences {
@@ -11,19 +13,19 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    color: #111111;
+    color: #ffffff;
 }
 
 .companies {
-    background-color: #b6b6b6;
+    background-color: #111111;
     padding: 3rem;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
 }
 
 .companies h1 {
     position: relative;
 }
-  
+
 .companies h1::before {
     content: "";
     position: absolute;
@@ -36,13 +38,13 @@
 .companies ul {
     margin-top: 4rem;
 }
-  
+
 .companies ul li {
     display: flex;
     align-items: center;
     margin-bottom: 3rem;
     font-weight: 500;
-    color: #111111;
+    color: #ffffff;
 }
 
 .info-companies {
@@ -58,16 +60,101 @@
     justify-content: space-between;
     margin-bottom: 1rem;
 }
-  
-.period > p {
-    color: #111111;
+
+.period span {
+    background-color: #111111;
+    color: #33FFB8;
     padding: 10px;
     border-radius: 8px;
+    font-size: 1.2rem;
 }
-  
-.info-companies-title > p {
+
+.info-title-companies > P {
     line-height: 2.2rem;
     letter-spacing: 0.1rem;
     text-align: center;
-    color: #111111;
+    color: #ffffff;
 }
+
+.info-companies section {
+    display: none;
+}
+
+.info-companies section.ativo {
+    display: block;
+    position: relative;
+}
+
+.js-companies li {
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+
+    .experiences {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .companies {
+      padding: 1rem 3rem;
+    }
+
+    .companies h1{
+      font-size: 3.3rem;
+    }
+
+    .info-companies {
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    .period > span {
+        width: 9rem;
+        margin-top: 1rem;
+    }
+    
+  }
+  
+  @media (max-width: 500px) {
+
+    .experiences {
+        display: flex;
+        justify-content: center;
+    }
+  
+    .companies h1 {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+  
+    .companies h1::before {
+      top: 4.6rem;
+    }
+  
+    .js-companies li {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .period {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .period h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .period > span {
+      display: flex;
+      width: 80%;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+}
+  

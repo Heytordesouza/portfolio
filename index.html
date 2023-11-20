@@ -3,6 +3,7 @@
 
 <head>
     <script src="./javascript/script.js" defer></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
@@ -11,26 +12,38 @@
 
 <body>
     <header id="header">
-        <h2 class="subtitle">DevHeytor</h2>
-        <nav id="nav" class="menu-js">
-            <ul id="menu" role="menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#experiences">Experiências</a></li>
-                <li><a href="#training">Formação</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#knowledge">Conhecimentos</a></li>
-                <li><a href="#contact">Contatos</a></li>
-            </ul>
-        </nav>
+        <h2 class="subtitle">
+            <img src="./assets/iconheaderleft.png" alt="Icon header" id="logoleft">
+            DevHeytor
+            <img src="./assets/iconheaderright.png" alt="Icon header" id="logoright">
+        </h2>
+
+        <section class="container-menu-theme">
+            <nav id="nav" class="js-menu">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-expanded="false" aria-controls="menu"
+                    aria-haspopup="true">
+                    <span id="hamburguer"></span>
+                </button>
+
+                <ul id="menu" role="menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiences">Experiências</a></li>
+                    <li><a href="#training">Formação</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#knowledge">Conhecimentos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <main>
 
-        <section id="sobre" class="sobre">
-            <div class="imageprofile">
-                <img src="./assets/imgfoto.png" alt="foto" width="250px">
+        <section class="sobre" id="sobre">
+            <div class="image">
+                <img src="./assets/imgfoto.png" alt="foto" width="250px" class="active-img">
             </div>
-            <section class="info">
+            <section class="info active-info">
                 <div class="name">
                     <h2 class="subtitle">Olá, me chamo</h2>
                     <h1 class="title">Heytor de Souza</h1>
@@ -52,43 +65,43 @@
             </section>
         </section>
 
-        <section class="container-experiences" id="experiences">
+        <section class="container-experiences js-scroll" id="experiences">
             <section class="experiences">
                 <section class="companies">
                     <h1 class="title">Experiências</h1>
-                    <ul>
+                    <ul class="js-companies">
                         <li>King Funghi</li>
                         <li>RicardoInfo</li>
                     </ul>
                 </section>
-                <section class="info-companies">
+                <section class="info-companies" id="companies">
                     <section class="info-title-companies">
                         <div class="period">
                             <h2 class="subtitle">Analista de Mídias Sociais</h2>
-                            <p class="paragraph-bold">abr de 2021 - mar de 2022</p>
+                            <span>abr de 2021 - mar de 2022</span>
                         </div>
                         <p class="paragraph">Desenvolvimento de publicações e engajamentos, usando ferramentas digitais
-                            com o
-                            propósito de aumentar o número de clientes da empresa.</p>
+                            com o propósito de aumentar o número de clientes da empresa.
+                        </p>
                     </section>
                     <section class="info-title-companies">
                         <div class="period">
                             <h2 class="subtitle">Atendente</h2>
-                            <p class="paragraph-bold">jan de 2017 - mar de 2020</p>
+                            <span>jan de 2017 - mar de 2020</span>
                         </div>
                         <p class="paragraph">Emissão de 2ª via de boletos, digitação, escaneamentos e cópias de
-                            documentos,
-                            inscrições em geral e venda de produtos de informática.</p>
+                            documentos, inscrições em geral e venda de produtos de informática.
+                        </p>
                     </section>
                 </section>
             </section>
         </section>
 
-        <section class="container-training" id="training">
+        <section class="container-training js-scroll" id="training">
             <section class="training">
                 <section class="training-menu">
                     <h1 class="title">Formação Acadêmica</h1>
-                    <ul>
+                    <ul class="js-training">
                         <li>Estácio</li>
                         <li>Labenu</li>
                         <li>Unicarioca</li>
@@ -97,8 +110,8 @@
                 <section class="info-training" id="training-menu">
                     <section class="info-training-container">
                         <div class="period">
-                            <h2 class="subtitle">Graduação em Análise e Desenvolvimento de Sistemas</h2>
-                            <p class="paragraph-bold">ago de 2023 - atualmente</p>
+                            <h2 class="subtitle">Análise e Desenvolvimento de Sistemas</h2>
+                            <span>ago de 2023 - atualmente</span>
                         </div>
                         <p class="paragraph">Graduação onde abrange diversas disciplinas relacionadas à
                             programação, desenvolvimento de software, bancos de dados, segurança da informação, sistemas
@@ -111,7 +124,7 @@
                     <section class="info-training-container">
                         <div class="period">
                             <h2 class="subtitle">Bootcamp Full Stack Web</h2>
-                            <p class="paragraph-bold">ago de 2022 - mar de 2023</p>
+                            <span>ago de 2022 - mar de 2023</span>
                         </div>
                         <p class="paragraph">No bootcamp foi uma experiência enriquecedora, em tempo integral, na
                             qual aprendi sobre diversas tecnologias, incluindo HTML, CSS, JavaScript, TypeScript, React,
@@ -119,8 +132,8 @@
                     </section>
                     <section class="info-training-container">
                         <div class="period">
-                            <h2 class="subtitle">Graduação em Administração</h2>
-                            <p class="paragraph-bold">ago de 2015 - jun de 2022</p>
+                            <h2 class="subtitle">Administração</h2>
+                            <span>ago de 2015 - jun de 2022</span>
                         </div>
                         <p class="paragraph">Durante a graduação, adquiri conhecimentos valiosos sobre gestão,
                             liderança, finanças, marketing, recursos humanos e muitas outras áreas fundamentais da
@@ -130,7 +143,7 @@
             </section>
         </section>
 
-        <section class="container-projects" id="projects">
+        <section class="container-projects js-scroll" id="projects">
             <h1 class="title-project title">Projetos</h1>
             <section class="projects">
                 <section class="project">
@@ -231,15 +244,15 @@
             </section>
         </section>
 
-        <section id="knowledge">
-            <section>
-                <section>
-                    <h1>Conhecimentos</h1>
+        <section class="knowledge js-scroll" id="knowledge">
+            <section class="container-knowledge">
+                <section class="knowledge-info">
+                    <h1 class="title">Conhecimentos</h1>
                     <div>
-                        <p>Tecnologias que eu uso no momento</p>
+                        <p class="paragraph-bold">Essas são as tecnologias que uso no momento</p>
                     </div>
                 </section>
-                <section>
+                <section class="knowledge-technologies">
                     <div>
                         <img src="./assets/icons/html.png" alt="icone HTML">
                         <p>HTML</p>
@@ -276,10 +289,10 @@
             </section>
         </section>
 
-        <section id="contact">
-            <section>
-                <section>
-                    <form>
+        <section class="container-contact js-scroll" id="contact">
+            <section class="contact">
+                <section class="contact-form">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
                         <label for="nome">Nome:</label>
                         <input type="text" name="name" required placeholder="Digite seu nome">
 
@@ -290,11 +303,14 @@
                         <textarea name="message" rows="5" required
                             placeholder="Escreva aqui sua mensagem..."></textarea>
 
-                        <button type="submit">Enviar Mensagem</button>
+                        <button class="btn-form" type="submit">Enviar Mensagem</button>
+
+                        <input type="hidden" name="accessKey" value="755e07a4-128c-44e5-b90e-408eb843ba9c">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimento.html">
                     </form>
                 </section>
 
-                <section>
+                <section class="contact-icons">
                     <div><a href="https://www.linkedin.com/in/heytor-de-souza" target="_blank"><img
                                 src="./assets/icons/linkedin.png" alt="icone linkedin" width="64px"></div></a>
                     <div><a href="https://github.com/Heytordesouza" target="_blank"><img src="./assets/icons/github.png"
@@ -304,8 +320,8 @@
         </section>
 
         <footer>
-            <p>Copyright©2023</p>
-            <span>Todos os direitos reservados.</span>
+            <p class="font-paragraph">Copyright © 2023</p>
+            <span class="font-paragraph">Todos os direitos reservados.</span>
         </footer>
 
     </main>

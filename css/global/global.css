@@ -5,6 +5,28 @@
     font-family: "Fira-sans", sans-serif;
 }
 
+html {
+    font-size: 60%;
+}
+
+body {
+    background-color: #111111;
+    font-size: 1.6rem;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #111111;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #33FFB8;
+    border-radius: 5px;
+}
+
 ul,
 li {
     list-style: none;
@@ -12,4 +34,9 @@ li {
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }

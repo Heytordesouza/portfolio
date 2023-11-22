@@ -1,5 +1,5 @@
 .knowledge {
-  background-color: #1b1b1b;
+  background-color: var(--color-bg-section);
   padding-top: 6rem;
   border-radius: 1rem;
   transition: 1s;
@@ -11,14 +11,13 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem 6rem 2rem;
-  background-color: #1b1b1b;
   gap: 1rem;
   border-radius: 1rem;
 }
 
 .container-knowledge h1 {
   position: relative;
-  color: #ffffff;
+  color: var(--color-font-title);
 }
 
 .container-knowledge h1::before {
@@ -33,7 +32,7 @@
 .container-knowledge p {
   max-width: 700px;
   margin-top: 3rem;
-  color: #ffffff;
+  color: var(--color-font-text);
   line-height: 2.5rem;
   letter-spacing: 0.2rem;
 }
@@ -52,12 +51,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1b1b1b;
-  width: 12rem;
-  height: 14rem;
-  padding-top: 1rem;
+  background-color: var(--color-div-technologies-contact);
+  width: 13rem;
+  height: 15rem;
+  padding: 2rem;
   border-radius: 20%;
-  margin: 0.6rem;
+  margin: 1rem 1rem;
 }
 
 @media (max-width: 1200px) {

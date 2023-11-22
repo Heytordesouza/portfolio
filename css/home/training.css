@@ -2,7 +2,7 @@
   max-width: 100%;
   margin-top: 5rem;
   padding: 1rem;
-  background-color: #1b1b1b;
+  background-color: var(--color-bg-section);
   border-radius: 1rem;
   transition: 1s;
 }
@@ -13,11 +13,11 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
-  color: #ffffff;
+  color: var(--color-font-title);
 }
 
 .training-menu {
-  background-color: #111111;
+  background-color: var(--color-bg);
   padding: 2rem;
   border-radius: 1rem;
   transition: 1s;
@@ -46,7 +46,7 @@
   align-items: center;
   margin-bottom: 3rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--color-font-text);
 }
 
 .info-training {
@@ -69,16 +69,11 @@
 }
 
 .period > span {
-  width: 25%;
-  background-color: #111111;
-  color: #33FFB8;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 1.2rem;
+  color: var(--color-font);
 }
 
 .info-training-container > P {
-  color: #ffffff;
+  color: var(--color-font-text);
   text-align: center;
   line-height: 2.2rem;
   letter-spacing: 0.1rem;

@@ -131,3 +131,17 @@ function tabNavigationform() {
 }
 
 tabNavigationform();
+
+const themeIcon = document.getElementById("theme-icon");
+themeIcon.addEventListener("click", toggleTheme);
+
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle("light-theme");
+
+  if (body.classList.contains("light-theme")) {
+    themeIcon.src = "./assets/icons/dark-icon.png";
+  } else {
+    themeIcon.src = "./assets/icons/light-icon.png";
+  }
+}

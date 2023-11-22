@@ -2,86 +2,169 @@
 <html lang="pt-br">
 
 <head>
+    <script src="./javascript/script.js" defer></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>DevHeytor</title>
 </head>
 
 <body>
-    <header>
-        <h2>DevHeytor</h2>
-        <nav>
-            <ul>
-                <li><a>Sobre</a></li>
-                <li><a>Experiências</a></li>
-                <li><a>Formação</a></li>
-                <li><a>Projetos</a></li>
-                <li><a>Conhecimentos</a></li>
-                <li><a>Contatos</a></li>
-            </ul>
-        </nav>
+    <header id="header">
+        <h2 class="subtitle">
+            <img src="./assets/iconheaderleft.png" alt="Icon header" id="logoleft">
+            DevHeytor
+            <img src="./assets/iconheaderright.png" alt="Icon header" id="logoright">
+        </h2>
+
+        <section class="container-menu-theme">
+            <nav id="nav" class="js-menu">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-expanded="false" aria-controls="menu"
+                    aria-haspopup="true">
+                    <span id="hamburguer"></span>
+                </button>
+
+                <ul id="menu" role="menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiences">Experiências</a></li>
+                    <li><a href="#training">Formação</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#knowledge">Conhecimentos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
 
     <main>
 
-        <section>
-            <div>
-                <img src="./assets/imgfoto.png" alt="foto" width="250px">
+        <section class="sobre" id="sobre">
+            <div class="image">
+                <img src="./assets/imgfoto.png" alt="foto" width="250px" class="active-img">
             </div>
-            <h2>Olá, me chamo Heytor de Souza</h2>
-            <h2>Software Developer</h2>
-            <p>Falar sobre mim...</p>
-        </section>
-
-        <section>
-            <h1>Experiências</h1>
-            <ul>
-                <li>King Funghi</li>
-                <li>RicardoInfo</li>
-            </ul>
-        </section>
-        <section>
-            <section>
-                <div>
-                    <h2>Analista de Mídias Sociais</h2>
-                    <p>abr de 2021 - mar de 2022</p>
+            <section class="info active-info">
+                <div class="name">
+                    <h2 class="subtitle">Olá, me chamo</h2>
+                    <h1 class="title">Heytor de Souza</h1>
+                    <h2 class="subtitle">Software Developer</h2>
                 </div>
-                <p>Funções realizadas</p>
-            </section>
-            <section>
-                <div>
-                    <h2>Atendente</h2>
-                    <p>jan de 2017 - mar de 2020</p>
+                <div class="presentation">
+                    <p class="paragraph">
+                        Sou Desenvolvedor Full Stack, graduando em Análise e Desenvolvimento de Sistema pela Estácio e
+                        graduado através do bootcamp da Labenu. Estou continuamente aprimorando minhas habilidades nessa
+                        área,
+                        buscando oportunidades profissionais para aplicar meu conhecimento. Minha jornada no bootcamp
+                        foi uma
+                        experiência enriquecedora, na qual aprendi sobre diversas tecnologias e agora estou me
+                        aprofundando na área
+                        cursando ADS.
+                    </p>
                 </div>
-                <p>Funções realizadas</p>
+                <a href="#contact">Contato</a>
             </section>
         </section>
 
-        <section>
-            <h1>Formação Acadêmica</h1>
+        <section class="container-experiences js-scroll" id="experiences">
+            <section class="experiences">
+                <section class="companies">
+                    <h1 class="title">Experiências</h1>
+                    <ul class="js-companies">
+                        <li>King Funghi</li>
+                        <li>RicardoInfo</li>
+                    </ul>
+                </section>
+                <section class="info-companies" id="companies">
+                    <section class="info-title-companies">
+                        <div class="period">
+                            <h2 class="subtitle">Analista de Mídias Sociais</h2>
+                            <span>abr de 2021 - mar de 2022</span>
+                        </div>
+                        <p class="paragraph">Desenvolvimento de publicações e engajamentos, usando ferramentas digitais
+                            com o propósito de aumentar o número de clientes da empresa.
+                        </p>
+                    </section>
+                    <section class="info-title-companies">
+                        <div class="period">
+                            <h2 class="subtitle">Atendente</h2>
+                            <span>jan de 2017 - mar de 2020</span>
+                        </div>
+                        <p class="paragraph">Emissão de 2ª via de boletos, digitação, escaneamentos e cópias de
+                            documentos, inscrições em geral e venda de produtos de informática.
+                        </p>
+                    </section>
+                </section>
+            </section>
         </section>
 
-        <section>
-            <h1>Projetos</h1>
-            <section>
-                <section>
-                    <img>
-                    <div>
-                        <h1>Universo Cinematogáfico da Marvel</h1>
-                        <p>NextJS, JavaScript, Firebase e React Toastify</p>
-                        <p>Este projeto consiste em um site com informações de cada filme, série e curta do Universo
-                            Marvel, utilizando as tecnologias do NextJS e do Firebase para o armazenamento das
-                            informações.</p>
-                        <div>
+        <section class="container-training js-scroll" id="training">
+            <section class="training">
+                <section class="training-menu">
+                    <h1 class="title">Formação Acadêmica</h1>
+                    <ul class="js-training">
+                        <li>Estácio</li>
+                        <li>Labenu</li>
+                        <li>Unicarioca</li>
+                    </ul>
+                </section>
+                <section class="info-training" id="training-menu">
+                    <section class="info-training-container">
+                        <div class="period">
+                            <h2 class="subtitle">Análise e Desenvolvimento de Sistemas</h2>
+                            <span>ago de 2023 - atualmente</span>
+                        </div>
+                        <p class="paragraph">Graduação onde abrange diversas disciplinas relacionadas à
+                            programação, desenvolvimento de software, bancos de dados, segurança da informação, sistemas
+                            operacionais, redes de computadores, matemática aplicada, gestão de projetos,
+                            empreendedorismo, entre outras. Tendo oportunidade de aprender linguagens de programação,
+                            como Java, C#, e Python, e aprofundar-se em tópicos como engenharia de software e design de
+                            interfaces.
+                        </p>
+                    </section>
+                    <section class="info-training-container">
+                        <div class="period">
+                            <h2 class="subtitle">Bootcamp Full Stack Web</h2>
+                            <span>ago de 2022 - mar de 2023</span>
+                        </div>
+                        <p class="paragraph">No bootcamp foi uma experiência enriquecedora, em tempo integral, na
+                            qual aprendi sobre diversas tecnologias, incluindo HTML, CSS, JavaScript, TypeScript, React,
+                            Jest, NodeJS e SQLite.</p>
+                    </section>
+                    <section class="info-training-container">
+                        <div class="period">
+                            <h2 class="subtitle">Administração</h2>
+                            <span>ago de 2015 - jun de 2022</span>
+                        </div>
+                        <p class="paragraph">Durante a graduação, adquiri conhecimentos valiosos sobre gestão,
+                            liderança, finanças, marketing, recursos humanos e muitas outras áreas fundamentais da
+                            administração.</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="container-projects js-scroll" id="projects">
+            <h1 class="title-project title">Projetos</h1>
+            <section class="projects">
+                <section class="project">
+                    <img src="./assets/projectmarvel.png" alt="projectmarvel">
+                    <div class="text">
+                        <h1 class="title">Universo Cinematogáfico da Marvel</h1>
+                        <p class="technologies">NextJS, JavaScript, Firebase e React Toastify</p>
+                        <p class="project-details">Este projeto consiste em um site com informações de cada filme, série
+                            e curta do
+                            Universo Marvel, utilizando as tecnologias do NextJS e do Firebase para o armazenamento das
+                            informações.
+                        </p>
+                        <div class="buttons">
                             <div>
-                                <a href="https://github.com/Heytordesouza/MarvelUniverse">
+                                <a class="button-repository" href="https://github.com/Heytordesouza/MarvelUniverse">
                                     <img src="./assets/icons/github.png" alt="github">
                                     Repositório
                                 </a>
                             </div>
                             <div>
-                                <a href="https://universomarvelstudios.vercel.app/">
+                                <a class="button-repository" href="https://universomarvelstudios.vercel.app/">
                                     <img src="./assets/icons/deploy.png" alt="deploy">
                                     Deploy
                                 </a>
@@ -89,23 +172,26 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    <img>
-                    <div>
-                        <h1>E-commerce Brinquedos Espaciais</h1>
-                        <p>NextJS, JavaScript, Módulos CSS, Axios, React Toastify, React Hooks</p>
-                        <p>Projeto criado para aperfeiçoamento e novos aprendizados em algumas tecnologias. O projeto
-                            consiste em um E-commerce de brinquedos espaciais, com 20 produtos, tendo filtragens, página
-                            de carrinho, busca por CEP e entre outros.</p>
-                        <div>
+                <section class="project">
+                    <img src="./assets/projectbrinquedos.png" alt="projectbrinquedos">
+                    <div class="text">
+                        <h1 class="title">E-commerce Brinquedos Espaciais</h1>
+                        <p class="technologies">NextJS, JavaScript, Módulos CSS, Axios, React Toastify, React Hooks</p>
+                        <p class="project-details">Projeto criado para aperfeiçoamento e novos aprendizados em algumas
+                            tecnologias.
+                            O projeto consiste em um E-commerce de brinquedos espaciais, com 20 produtos, tendo
+                            filtragens, página de
+                            carrinho, busca por CEP e entre outros.</p>
+                        <div class="buttons">
                             <div>
-                                <a href="https://github.com/Heytordesouza/ecommerce-brinquedos-espaciais">
+                                <a class="button-repository"
+                                    href="https://github.com/Heytordesouza/ecommerce-brinquedos-espaciais">
                                     <img src="./assets/icons/github.png" alt="github">
                                     Repositório
                                 </a>
                             </div>
                             <div>
-                                <a href="https://ecommerce-brinquedos-espaciais.vercel.app/">
+                                <a class="button-repository" href="https://ecommerce-brinquedos-espaciais.vercel.app/">
                                     <img src="./assets/icons/deploy.png" alt="deploy">
                                     Deploy
                                 </a>
@@ -113,21 +199,60 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    <h1>Loading...</h1>
+                <section class="project">
+                    <img src="./assets/heytorapp.png" alt="heytorapp">
+                    <div class="text">
+                        <h1 class="title">HeytorApp</h1>
+                        <p class="technologies">ReactJS, Axios, Chakra UI e Styled-components</p>
+                        <p class="project-details">Projeto front-end do projeto fullstack feito no Bootcamp da Labenu
+                            para a criação de um aplicativo mobile first inspirado no Reddit, com pequenas atualizações
+                            recentemente.</p>
+                        <div class="buttons">
+                            <div>
+                                <a class="button-repository" href="https://github.com/Heytordesouza/HeytorApp">
+                                    <img src="./assets/icons/github.png" alt="github">
+                                    Repositório
+                                </a>
+                            </div>
+                            <div>
+                                <a class="button-repository" href="https://heytorapp.vercel.app">
+                                    <img src="./assets/icons/deploy.png" alt="deploy">
+                                    Deploy
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="project">
+                    <img src="./assets/heytorappback-end.png" alt="heytorapp Back-end">
+                    <div class="text">
+                        <h1 class="title">HeytorApp Back-end</h1>
+                        <p class="technologies">Typescript, NodeJS, SQLite, Express, Knex, Postman e Render </p>
+                        <p class="project-details">Projeto back-end do projeto fullstack feito no Bootcamp da Labenu
+                            para a criação de uma rede social com o objetivo da conexão e a interação entre pessoas.
+                            Quem se cadastrar no aplicativo poderá criar, curtir e comentar publicações.</p>
+                        <div class="buttons">
+                            <div>
+                                <a class="button-repository" href="https://github.com/Heytordesouza/HeytorApp-Back-end">
+                                    <img src="./assets/icons/github.png" alt="github">
+                                    Repositório
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
         </section>
 
-        <section>
-            <section>
-                <section>
-                    <h1>Conhecimentos</h1>
+        <section class="knowledge js-scroll" id="knowledge">
+            <section class="container-knowledge">
+                <section class="knowledge-info">
+                    <h1 class="title">Conhecimentos</h1>
                     <div>
-                        <p>Tecnologias que eu uso no momento</p>
+                        <p class="paragraph-bold">Essas são as tecnologias que uso no momento</p>
                     </div>
                 </section>
-                <section>
+                <section class="knowledge-technologies">
                     <div>
                         <img src="./assets/icons/html.png" alt="icone HTML">
                         <p>HTML</p>
@@ -164,10 +289,10 @@
             </section>
         </section>
 
-        <section>
-            <section>
-                <section>
-                    <form>
+        <section class="container-contact js-scroll" id="contact">
+            <section class="contact">
+                <section class="contact-form">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
                         <label for="nome">Nome:</label>
                         <input type="text" name="name" required placeholder="Digite seu nome">
 
@@ -178,11 +303,14 @@
                         <textarea name="message" rows="5" required
                             placeholder="Escreva aqui sua mensagem..."></textarea>
 
-                        <button type="submit">Enviar Mensagem</button>
+                        <button class="btn-form" type="submit">Enviar Mensagem</button>
+
+                        <input type="hidden" name="accessKey" value="755e07a4-128c-44e5-b90e-408eb843ba9c">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/agradecimento.html">
                     </form>
                 </section>
 
-                <section>
+                <section class="contact-icons">
                     <div><a href="https://www.linkedin.com/in/heytor-de-souza" target="_blank"><img
                                 src="./assets/icons/linkedin.png" alt="icone linkedin" width="64px"></div></a>
                     <div><a href="https://github.com/Heytordesouza" target="_blank"><img src="./assets/icons/github.png"
@@ -192,8 +320,8 @@
         </section>
 
         <footer>
-            <p>Copyright©2023</p>
-            <span>Todos os direitos reservados.</span>
+            <p class="font-paragraph">Copyright © 2023</p>
+            <span class="font-paragraph">Todos os direitos reservados.</span>
         </footer>
 
     </main>

@@ -1,0 +1,153 @@
+main {
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.sobre {
+    display: flex;
+    gap: 5rem;
+    background-color: #1b1b1b;
+    transition: 1s;
+    padding: 3rem 9rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 600rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.name h2 {
+    color: #33FFB8;
+}
+
+.name h1 {
+    color: #ffffff;
+}
+
+.presentation {
+    color: #ffffff;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info a {
+    display: inline-block;
+    color: #111111;
+    background-color: #ffffff;
+    padding: 1rem 3.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+.info a:hover {
+    background-color: #33FFB8;
+    transition: 0.6s;
+}
+
+@media (max-width: 1200px) {
+    .sobre {
+        flex-direction: column;
+    }
+
+    .image {
+        display: flex;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 300rem;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .image img {
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .image {
+        width: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    .image {
+        width: 60%;
+    }
+
+    .sobre {
+        padding: 3rem 3rem;
+    }
+
+    .name > p {
+        margin-bottom: 0.5rem;
+    }
+
+    header img {
+        width: 150px;
+    }
+}
+
+.active-img {
+    animation: show 0.7s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-40px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.active-info {
+    animation: showInfo 0.7s forwards;
+}
+
+@keyframes showInfo {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -40px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

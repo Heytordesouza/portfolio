@@ -145,3 +145,17 @@ function toggleTheme() {
     themeIcon.src = "./assets/icons/light-icon.png";
   }
 }
+
+const curriculo = document.getElementById('downloadButton').addEventListener('click', function() {
+    
+    var downloadLink = document.createElement('a');
+    downloadLink.href = './assets/Dev_Heytor_Curriculo.pdf';
+    downloadLink.download = 'Dev_Heytor_Curriculo.pdf';
+  
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+  
+    document.body.removeChild(downloadLink);
+})
+
+curriculo();

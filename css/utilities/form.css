@@ -1,5 +1,5 @@
 form {
-  width: 400px;
+  width: 385px;
   background-color: var(--color-bg-section);
   border-radius: 8px;
   padding: 20px;
@@ -51,4 +51,10 @@ textarea {
 button:hover {
   background-color: #33FFB8;
   transition: 0.5s;
+}
+
+@media (max-width: 395px) {
+  form {
+    width: 100vw;
+  }
 }

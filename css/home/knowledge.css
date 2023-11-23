@@ -82,7 +82,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 590px) {
 
   .knowledge-technologies {
     grid-template-columns: 1fr 1fr;
@@ -98,4 +98,11 @@
     width: 40px;
   }
 
+}
+
+@media (max-width: 310px) {
+  .knowledge-technologies {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
 }

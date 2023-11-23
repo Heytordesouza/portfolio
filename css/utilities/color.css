@@ -1,0 +1,25 @@
+body {
+  transition: 1s;
+  --color-font-text: #c7c7c7;
+  --color-font: #33FFB8;
+  --color-font-title: #fff;
+  --color-menu-mobile: #33FFB8;
+  --color-bg: #111111;
+  --color-bg-section: #1b1b1b;
+  --color-projects-h1: #111111;
+  --color-border: #111111;
+  --color-div-technologies-contact: #1b1b1b;
+}
+
+body.light-theme {
+  transition: 1s;
+  --color-font-text: #111111;
+  --color-font: #111111;
+  --color-font-title: #111111;
+  --color-menu-mobile: #33FFB8;
+  --color-bg: #ffffff;
+  --color-bg-section: #dcdcdc;
+  --color-projects-h1: #33FFB8;
+  --color-border: #33FFB8;
+  --color-div-technologies-contact: #ffffff;
+}

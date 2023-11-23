@@ -3,7 +3,7 @@
     margin-top: 5rem;
     padding: 3rem;
     border-radius: 1rem;
-    background-color: #1b1b1b;
+    background-color: var(--color-bg-section);
     transition: 1s;
 }
 
@@ -13,11 +13,11 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    color: #ffffff;
+    color: var(--color-font-title);
 }
 
 .companies {
-    background-color: #111111;
+    background-color: var(--color-bg);
     padding: 3rem;
     border-radius: 1rem;
 }
@@ -44,7 +44,7 @@
     align-items: center;
     margin-bottom: 3rem;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--color-font-text);
 }
 
 .info-companies {
@@ -54,16 +54,17 @@
     flex-direction: column;
 }
 
-.period {
+.period-companies {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
-.period span {
-    background-color: #111111;
-    color: #33FFB8;
+.period-companies span {
+    background-color: var(--color-bg);
+    color: var(--color-font);
     padding: 10px;
     border-radius: 8px;
     font-size: 1.2rem;
@@ -73,7 +74,7 @@
     line-height: 2.2rem;
     letter-spacing: 0.1rem;
     text-align: center;
-    color: #ffffff;
+    color: var(--color-font-text);
 }
 
 .info-companies section {
@@ -105,12 +106,12 @@
     }
 
     .info-companies {
-      width: 100%;
+      width: 92vw;
       margin-top: 4rem;
     }
 
-    .period > span {
-        width: 9rem;
+    .period-companies > span {
+        width: 18rem;
         margin-top: 1rem;
     }
     
@@ -121,37 +122,53 @@
     .experiences {
         display: flex;
         justify-content: center;
+        width: 100%;
+    }
+
+    .companies {
+        padding: 0;
+        width: 88vw;
+    }
+
+    .info-companies {
+        width: 86vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
   
     .companies h1 {
         display: flex;
         justify-content: center;
-        padding-top: 1rem;
+        width: 90vw;
+        font-size: 10vw;
+        padding-top: 2rem;
     }
   
     .companies h1::before {
-      top: 4.6rem;
+      top: 0.9rem;
     }
   
     .js-companies li {
       display: flex;
       justify-content: center;
     }
-  
-    .period {
+
+    .period-companies {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 100%;
     }
 
-    .period h2{
+    .period-companies h2{
         display: flex;
         justify-content: center;
     }
 
-    .period > span {
+    .period-companies > span {
       display: flex;
-      width: 80%;
+      width: 100%;
       justify-content: center;
       margin-top: 1rem;
     }

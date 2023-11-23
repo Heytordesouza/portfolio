@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #111111;
+    background-color: var(--color-bg);
     font-size: 1.6rem;
 }
 
@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #111111;
+    background-color: var(--color-bg);
 }
 
 body::-webkit-scrollbar-thumb {

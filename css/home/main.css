@@ -6,7 +6,7 @@ main {
 .sobre {
     display: flex;
     gap: 5rem;
-    background-color: #1b1b1b;
+    background-color: var(--color-bg-section);
     transition: 1s;
     padding: 3rem 9rem;
     margin-top: 2rem;
@@ -37,15 +37,15 @@ main {
 }
 
 .name h2 {
-    color: #33FFB8;
+    color: var(--color-font);
 }
 
 .name h1 {
-    color: #ffffff;
+    color: var(--color-font-title);
 }
 
 .presentation {
-    color: #ffffff;
+    color: var(--color-font-text);
     line-height: 2rem;
     letter-spacing: 0.1rem;
     margin-top: 2rem;

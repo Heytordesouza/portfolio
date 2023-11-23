@@ -2,7 +2,7 @@
   max-width: 100%;
   margin-top: 5rem;
   padding: 1rem;
-  background-color: #1b1b1b;
+  background-color: var(--color-bg-section);
   border-radius: 1rem;
   transition: 1s;
 }
@@ -13,11 +13,11 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
-  color: #ffffff;
+  color: var(--color-font-title);
 }
 
 .training-menu {
-  background-color: #111111;
+  background-color: var(--color-bg);
   padding: 2rem;
   border-radius: 1rem;
   transition: 1s;
@@ -46,7 +46,7 @@
   align-items: center;
   margin-bottom: 3rem;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--color-font-text);
 }
 
 .info-training {
@@ -56,7 +56,7 @@
   flex-direction: column;
 }
 
-.period {
+.period-training {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,21 +64,16 @@
   margin-bottom: 1rem;
 }
 
-.period h2 {
-  width: 70%;
-}
-
-.period > span {
-  width: 25%;
-  background-color: #111111;
-  color: #33FFB8;
+.period-training > span {
+  background-color: var(--color-bg);
+  color: var(--color-font);
   padding: 10px;
   border-radius: 8px;
   font-size: 1.2rem;
 }
 
 .info-training-container > P {
-  color: #ffffff;
+  color: var(--color-font-text);
   text-align: center;
   line-height: 2.2rem;
   letter-spacing: 0.1rem;
@@ -126,21 +121,30 @@
 
 @media (max-width: 500px) {
 
+  .training {
+    display: flex;
+    justify-content: center;
+  }
+
   .training-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem 7rem;
+    width: 100%;
   }
 
   .training-menu h1::before {
-    top: 8.4rem;
+    top: 0rem;
   }
 
   .training-menu h1 {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
   }
 
   .js-training li {
@@ -148,18 +152,21 @@
     justify-content: center;
   }
 
-  .period {
+  .period-training {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
   }
 
-  .period h2{
+  .period-training h2{
     display: flex;
     justify-content: center;
   }
 
-  .period span {
+  .period-training > span {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     margin-top: 1rem;
   }

@@ -1,7 +1,7 @@
 .container-training {
   max-width: 100%;
   margin-top: 5rem;
-  padding: 1rem;
+  padding: 3rem;
   background-color: var(--color-bg-section);
   border-radius: 1rem;
   transition: 1s;
@@ -12,7 +12,7 @@
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 2rem;
   color: var(--color-font-title);
 }
 
@@ -21,11 +21,11 @@
   padding: 2rem;
   border-radius: 1rem;
   transition: 1s;
+  width: 29rem;
 }
 
 .training-menu h1 {
   position: relative;
-  width: 22vw;
 }
 
 .training-menu h1::before {
@@ -34,7 +34,7 @@
   background: #33FFB8;
   width: 4rem;
   height: 0.5rem;
-  top: 8.5rem;
+  top: 8.7rem;
 }
 
 .training-menu ul {
@@ -47,36 +47,15 @@
   margin-bottom: 3rem;
   font-weight: 500;
   color: var(--color-font-text);
+  cursor: pointer;
 }
 
 .info-training {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.period-training {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.period-training > span {
-  background-color: var(--color-bg);
-  color: var(--color-font);
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 1.2rem;
-}
-
-.info-training-container > P {
-  color: var(--color-font-text);
-  text-align: center;
-  line-height: 2.2rem;
-  letter-spacing: 0.1rem;
+  margin-left: 5rem;
 }
 
 .info-training section {
@@ -88,8 +67,27 @@
   position: relative;
 }
 
-.js-training li {
-  cursor: pointer;
+.period-training {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.period-training>span {
+  background-color: var(--color-bg);
+  color: var(--color-font);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.info-training-container>P {
+  color: var(--color-font-text);
+  text-align: center;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
 }
 
 @media (max-width: 1000px) {
@@ -109,12 +107,13 @@
   }
 
   .training-menu h1::before {
-    top: 7.5rem;
+    top: 7.2rem;
   }
 
   .info-training {
-    width: 100%;
+    width: 92vw;
     margin-top: 4rem;
+    margin-right: 3rem;
   }
 
 }
@@ -130,12 +129,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem 7rem;
-    width: 100%;
-  }
-
-  .training-menu h1::before {
-    top: 0rem;
+    padding: 0;
+    width: 88vw;
   }
 
   .training-menu h1 {
@@ -147,9 +142,22 @@
     font-size: 10vw;
   }
 
-  .js-training li {
+  .training-menu h1::before {
+    top: 0.9rem;
+  }
+
+  .training-menu ul li {
     display: flex;
     justify-content: center;
+    cursor: none;
+  }
+
+  .info-training {
+    width: 86vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3rem;
   }
 
   .period-training {
@@ -159,14 +167,14 @@
     width: 100%;
   }
 
-  .period-training h2{
+  .period-training h2 {
     display: flex;
     justify-content: center;
   }
 
-  .period-training > span {
+  .period-training>span {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     margin-top: 1rem;
   }

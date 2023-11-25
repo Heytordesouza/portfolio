@@ -136,25 +136,25 @@ const themeIcon = document.getElementById("theme-icon");
 themeIcon.addEventListener("click", toggleTheme);
 
 function toggleTheme() {
-  const body = document.body;
-  body.classList.toggle("light-theme");
+    const body = document.body;
+    body.classList.toggle("light-theme");
 
-  if (body.classList.contains("light-theme")) {
-    themeIcon.src = "./assets/icons/dark-icon.png";
-  } else {
-    themeIcon.src = "./assets/icons/light-icon.png";
-  }
+    if (body.classList.contains("light-theme")) {
+        themeIcon.src = "./assets/icons/dark-icon.png";
+    } else {
+        themeIcon.src = "./assets/icons/light-icon.png";
+    }
 }
 
-const curriculo = document.getElementById('downloadButton').addEventListener('click', function() {
-    
+const curriculo = document.getElementById('downloadButton').addEventListener('click', function () {
+
     var downloadLink = document.createElement('a');
     downloadLink.href = './assets/Dev_Heytor_Curriculo.pdf';
     downloadLink.download = 'Dev_Heytor_Curriculo.pdf';
-  
+
     document.body.appendChild(downloadLink);
     downloadLink.click();
-  
+
     document.body.removeChild(downloadLink);
 })
 

@@ -12,6 +12,21 @@ header {
     transition: 1s;
 }
 
+header h2 {
+    display: flex;
+    align-items: center;
+    color: var(--color-font-title);
+}
+
+header #logoleft {
+    width: 15%;
+}
+
+header #logoright {
+    margin-left: 0.7rem;
+    width: 8.5%;
+}
+
 header .container-menu-theme {
     display: flex;
     justify-content: center;
@@ -23,21 +38,6 @@ header ul {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
-}
-
-header h2 {
-    display: flex;
-    align-items: center;
-    color: var(--color-font-title);
-}
-
-header #logoleft {
-    width: 15%;
-}
-  
-header #logoright {
-    margin-left: 0.7rem;
-    width: 8.5%;
 }
 
 header a {

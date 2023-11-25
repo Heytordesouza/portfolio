@@ -52,7 +52,7 @@ main {
     margin-bottom: 3rem;
 }
 
-.info button {
+.button-contact {
     display: inline-block;
     color: #111111;
     background-color: #ffffff;
@@ -63,12 +63,13 @@ main {
     border: none;
 }
 
-.info button:hover {
+.button-contact:hover {
     background-color: #33FFB8;
     transition: 0.6s;
 }
 
 @media (max-width: 1200px) {
+
     .sobre {
         flex-direction: column;
     }
@@ -87,39 +88,46 @@ main {
         align-items: center;
         justify-content: center;
     }
+
 }
 
 @media (max-width: 1000px) {
+
     .image img {
         width: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
 }
 
 @media (max-width: 760px) {
+
     .image {
         width: 30%;
     }
+
 }
 
 @media (max-width: 500px) {
-    .image {
-        width: 60%;
-    }
 
     .sobre {
         padding: 3rem 3rem;
     }
 
-    .name > p {
+    .image {
+        width: 60%;
+    }
+
+    .name>p {
         margin-bottom: 0.5rem;
     }
 
     header img {
         width: 150px;
     }
+
 }
 
 .active-img {
@@ -127,6 +135,7 @@ main {
 }
 
 @keyframes show {
+
     from {
         opacity: 0;
         transform: translate3d(-40px, 0, 0);
@@ -136,6 +145,7 @@ main {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+
 }
 
 .active-info {
@@ -143,6 +153,7 @@ main {
 }
 
 @keyframes showInfo {
+
     from {
         opacity: 0;
         transform: translate3d(0, -40px, 0);
@@ -152,12 +163,13 @@ main {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+
 }
 
-@media (max-width: 360px) {
-   
-    .info button {
+@media (max-width: 374px) {
+
+    .button-contact {
         margin-top: 0.5rem;
     }
-    
+
 }

@@ -18,8 +18,9 @@
 
 .companies {
     background-color: var(--color-bg);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 1rem;
+    transition: 1s;
 }
 
 .companies h1 {
@@ -45,13 +46,24 @@
     margin-bottom: 3rem;
     font-weight: 500;
     color: var(--color-font-text);
+    cursor: pointer;
 }
 
 .info-companies {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 5rem;
+}
+
+.info-companies section {
+    display: none;
+}
+
+.info-companies section.ativo {
+    display: block;
+    position: relative;
 }
 
 .period-companies {
@@ -70,24 +82,11 @@
     font-size: 1.2rem;
 }
 
-.info-title-companies > P {
+.info-title-companies>P {
     line-height: 2.2rem;
     letter-spacing: 0.1rem;
     text-align: center;
     color: var(--color-font-text);
-}
-
-.info-companies section {
-    display: none;
-}
-
-.info-companies section.ativo {
-    display: block;
-    position: relative;
-}
-
-.js-companies li {
-    cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -98,26 +97,31 @@
     }
 
     .companies {
-      padding: 1rem 3rem;
+        padding: 1rem 3rem;
     }
 
-    .companies h1{
-      font-size: 3.3rem;
+    .companies h1 {
+        font-size: 3.3rem;
+    }
+
+    .companies h1::before {
+        top: 3.4rem
     }
 
     .info-companies {
-      width: 92vw;
-      margin-top: 4rem;
+        width: 92vw;
+        margin-top: 4rem;
+        margin-right: 3rem;
     }
 
-    .period-companies > span {
-        width: 18rem;
+    .period-companies>span {
+        width: 19rem;
         margin-top: 1rem;
     }
-    
-  }
-  
-  @media (max-width: 500px) {
+
+}
+
+@media (max-width: 500px) {
 
     .experiences {
         display: flex;
@@ -130,13 +134,6 @@
         width: 88vw;
     }
 
-    .info-companies {
-        width: 86vw;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-  
     .companies h1 {
         display: flex;
         justify-content: center;
@@ -144,34 +141,42 @@
         font-size: 10vw;
         padding-top: 2rem;
     }
-  
+
     .companies h1::before {
-      top: 0.9rem;
+        top: 0.9rem;
     }
-  
-    .js-companies li {
-      display: flex;
-      justify-content: center;
+
+    .companies ul li {
+        display: flex;
+        justify-content: center;
+        cursor: none;
+    }
+
+    .info-companies {
+        width: 86vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 3rem;
     }
 
     .period-companies {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
     }
 
-    .period-companies h2{
+    .period-companies h2 {
         display: flex;
         justify-content: center;
     }
 
-    .period-companies > span {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      margin-top: 1rem;
+    .period-companies>span {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin-top: 1rem;
     }
 
 }
-  

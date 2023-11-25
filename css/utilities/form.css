@@ -54,7 +54,9 @@ button:hover {
 }
 
 @media (max-width: 395px) {
+
   form {
     width: 100vw;
   }
+  
 }

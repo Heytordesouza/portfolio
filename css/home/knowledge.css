@@ -61,15 +61,15 @@
 
 @media (max-width: 1200px) {
 
+  .container-knowledge {
+    flex-direction: column;
+  }
+
   .knowledge-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
-  }
-
-  .container-knowledge {
-    flex-direction: column;
   }
 
 }
@@ -84,14 +84,14 @@
 
 @media (max-width: 590px) {
 
-  .knowledge-technologies {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
   .knowledge-info h1::before {
     top: 3.5rem;
     left: 8.5rem;
+  }
+
+  .knowledge-technologies {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .knowledge-technologies img {
@@ -101,8 +101,10 @@
 }
 
 @media (max-width: 310px) {
+
   .knowledge-technologies {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
+  
 }

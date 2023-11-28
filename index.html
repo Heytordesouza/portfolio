@@ -293,14 +293,14 @@
             <section class="contact">
                 <section class="contact-form">
                     <form action="https://api.staticforms.xyz/submit" method="post">
-                        <label for="nome">Nome:</label>
-                        <input type="text" name="name" required placeholder="Digite seu nome">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" autocomplete="name" required placeholder="Digite seu nome">
 
                         <label for="email">Email:</label>
-                        <input type="email" name="email" required placeholder="Digite seu e-mail">
+                        <input type="email" name="email" id="email" autocomplete="email"required placeholder="Digite seu e-mail">
 
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea name="message" rows="5" required
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="message" rows="5" required
                             placeholder="Escreva aqui sua mensagem..."></textarea>
 
                         <button class="btn-form" type="submit">Enviar Mensagem</button>

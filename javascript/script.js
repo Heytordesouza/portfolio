@@ -77,7 +77,6 @@ function initAnimationScroll() {
         function animaScroll() {
             sectionScroll.forEach((section) => {
                 const sectionTop = section.getBoundingClientRect().top - windowEdit;
-                console.log(sectionTop);
                 if (sectionTop < 0) {
                     section.classList.add("animar");
                 } else section.classList.remove("animar");
@@ -157,5 +156,3 @@ const curriculo = document.getElementById('downloadButton').addEventListener('cl
 
     document.body.removeChild(downloadLink);
 })
-
-curriculo();

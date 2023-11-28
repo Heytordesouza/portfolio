@@ -49,6 +49,14 @@ header a {
 
 header #theme-icon {
     width: 3.5rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
     cursor: pointer;
+}
+
+@media (max-width: 500px) {
+
+    header #theme-icon {
+        margin-left: 1rem;
+    }
+
 }

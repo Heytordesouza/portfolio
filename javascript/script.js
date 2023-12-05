@@ -148,8 +148,8 @@ function toggleTheme() {
 const curriculo = document.getElementById('downloadButton').addEventListener('click', function () {
 
     var downloadLink = document.createElement('a');
-    downloadLink.href = './assets/Dev_Heytor_Curriculo.pdf';
-    downloadLink.download = 'Dev_Heytor_Curriculo.pdf';
+    downloadLink.href = './assets/Heytor_Dev.pdf';
+    downloadLink.download = 'Heytor_Dev.pdf';
 
     document.body.appendChild(downloadLink);
     downloadLink.click();
